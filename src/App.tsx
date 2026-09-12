@@ -184,15 +184,16 @@ export default function GeoinnovationDPLanding() {
     }
 
     const topGrad = ctx.createLinearGradient(0, 0, 0, 260);
-    topGrad.addColorStop(0, "rgba(0,0,0,0.55)");
+    topGrad.addColorStop(0, "rgba(0,0,0,0.78)");
+    topGrad.addColorStop(0.55, "rgba(0,0,0,0.3)");
     topGrad.addColorStop(1, "rgba(0,0,0,0)");
     ctx.fillStyle = topGrad;
     ctx.fillRect(0, 0, CANVAS_W, 260);
 
     const botGrad = ctx.createLinearGradient(0, CANVAS_H - 520, 0, CANVAS_H);
-    botGrad.addColorStop(0, "rgba(0,0,0,0)");
-    botGrad.addColorStop(0.35, "rgba(0,0,0,0.75)");
-    botGrad.addColorStop(1, "rgba(0,0,0,0.9)");
+    botGrad.addColorStop(0, "rgba(0,0,0,0.12)");
+    botGrad.addColorStop(0.35, "rgba(0,0,0,0.82)");
+    botGrad.addColorStop(1, "rgba(0,0,0,0.98)");
     ctx.fillStyle = botGrad;
     ctx.fillRect(0, CANVAS_H - 520, CANVAS_W, 520);
 
@@ -334,7 +335,7 @@ export default function GeoinnovationDPLanding() {
             <span style={{ fontSize: 18, fontWeight: 700 }}>Geoinnovation</span>
             <span style={{ fontSize: 12, fontWeight: 500, color: COLORS.textMuted }}>summit</span>
           </div>
-          <span style={{ fontSize: 13, color: COLORS.textFaint }}>Make it official with a DP maker</span>
+          {/* <span style={{ fontSize: 13, color: COLORS.textFaint }}>Make it official with a DP maker</span> */}
         </header>
 
         {/* Hero + tool */}
