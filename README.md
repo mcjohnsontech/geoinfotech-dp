@@ -74,3 +74,10 @@ export default defineConfig([
 
 ```
 # geoinfotech-dp
+
+The site is deployed automatically to GitHub Pages from the `main` branch:
+
+https://mcjohnsontech.github.io/geoinfotech-dp/
+
+In the repository settings, set **Pages > Build and deployment > Source** to
+**GitHub Actions** once. Future pushes to `main` will build and publish the site.
